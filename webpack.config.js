@@ -1,7 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: ['./src/main.js'],
@@ -26,29 +25,19 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/icons/[name].[ext]?[hash]'
+                }
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
                     'css-loader',
                     'sass-loader'
-                ],
-                loader: 'postcss-loader',
-                options: {
-                    // `postcssOptions` is needed for postcss 8.x;
-                    // if you use postcss 7.x skip the key
-                    postcssOptions: {
-                        // postcss plugins, can be exported to postcss.config.js
-                        plugins: function () {
-                            return [
-                                require('autoprefixer')
-                            ];
-                        }
-                    }
-                }
-            },
-            {
-                test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+                ]
             }
         ]
     },

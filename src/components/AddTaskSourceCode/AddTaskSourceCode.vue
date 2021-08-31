@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "src/components/AddTaskSection/AddTaskButton/AddTaskButton";
+@import "../AddTaskButton/AddTaskButton";
 </style>

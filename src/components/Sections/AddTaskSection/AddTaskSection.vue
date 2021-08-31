@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import AddTaskButton from "@/components/AddTaskSection/AddTaskButton/AddTaskButton";
-import AddTaskSourceCode from "@/components/AddTaskSection/AddTaskSourceCode/AddTaskSourceCode";
+import AddTaskButton from "@/components/AddTaskButton/AddTaskButton";
+import AddTaskSourceCode from "@/components/AddTaskSourceCode/AddTaskSourceCode";
 
 export default {
     name: "AddTaskSection",

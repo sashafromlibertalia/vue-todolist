@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import InfoSection from "@/components/InfoSection/InfoSection";
-import TasksSection from "@/components/TasksSection/TasksSection";
-import AddTaskSection from "@/components/AddTaskSection/AddTaskSection";
+import InfoSection from "@/components/Sections/InfoSection/InfoSection";
+import TasksSection from "@/components/Sections/TasksSection/TasksSection";
+import AddTaskSection from "@/components/Sections/AddTaskSection/AddTaskSection";
 
 export default {
     name: 'App',
@@ -23,6 +23,10 @@ export default {
 
 <style lang="scss">
 @import "assets/variables";
+::selection {
+    background: $selection__background;
+    color: $selection__color;
+}
 * {
     box-sizing: border-box;
 }

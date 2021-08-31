@@ -1,3 +1,6 @@
+$selection__background: #8987FF;
+$selection__color: white;
+
 $main__color: #37DF84;
 $main__color-hover: #2C9C5F;
 
@@ -7,5 +10,6 @@ $inactive__color-hover: rgba(0, 0, 0, 0.4);
 $animation__bezier: cubic-bezier(.44,0,.64,.96);
 
 $default__font: -apple-system, BlinkMacSystemFont, sans-serif;
+$header__font: 'Montserrat', sans-serif;
 
 $shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,25 @@
+@import "src/assets/variables";
+
+.groups {
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &_header {
+            font-family: $header__font;
+            font-weight: 800;
+            font-size: 24px;
+        }
+        &_btn {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+
+            margin-left: 10px;
+        }
+    }
+}
