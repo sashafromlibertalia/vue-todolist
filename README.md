@@ -1,4 +1,5 @@
-# vue-todo
+# vue-todolist
+🗂 To-do list built with Vue
 
 ## Project setup
 ```
