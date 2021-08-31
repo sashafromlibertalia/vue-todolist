@@ -1,9 +1,9 @@
 <template>
-    <section id="right-column">
-        <div class="add-button">
+    <div class="add-button">
+        <div class="add-button__container">
             Добавить задачу
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -13,5 +13,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "./AddTaskButton.scss";
+@import "AddTaskButton";
 </style>

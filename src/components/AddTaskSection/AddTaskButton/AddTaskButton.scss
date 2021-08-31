@@ -1,0 +1,46 @@
+@import "../../../assets/variables";
+
+#right-column {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    &__container {
+        background: $main__color;
+        width: 30vh;
+        position: relative;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        font-family: $default__font;
+        font-weight: bold;
+        font-size: 24px;
+        transition: 250ms $animation__bezier;
+        &:hover {
+            background: $main__color-hover;
+        }
+    }
+
+    &__source-code {
+        font-family: $default__font;
+        color: $inactive__color;
+        text-decoration: underline;
+        transition: 250ms $animation__bezier;
+        &:hover {
+            color: $inactive__color-hover;
+        }
+    }
+}

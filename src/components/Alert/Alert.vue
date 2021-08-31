@@ -1,15 +1,15 @@
 <template>
-<section>
+    <div>
 
-</section>
+    </div>
 </template>
 
 <script>
 export default {
-    name: "TasksSection"
+    name: "Alert"
 }
 </script>
 
 <style scoped lang="scss">
-@import "TasksSection";
+@import "Alert";
 </style>
