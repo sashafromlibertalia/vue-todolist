@@ -1,0 +1,32 @@
+@import "public/variables";
+
+#right-column {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-button {
+    background: $main__color;
+    width: 30vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 250ms;
+    &:hover {
+      background: $main__color-hover;
+    }
+}
