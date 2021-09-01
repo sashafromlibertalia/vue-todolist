@@ -27,6 +27,12 @@ export default {
     background: $selection__background;
     color: $selection__color;
 }
+html {
+    height:100%;
+}
+body {
+    height: 98%;
+}
 * {
     box-sizing: border-box;
 }
@@ -34,5 +40,6 @@ export default {
     display: flex;
     flex-direction: row;
     padding: 3%;
+    height: 100%;
 }
 </style>

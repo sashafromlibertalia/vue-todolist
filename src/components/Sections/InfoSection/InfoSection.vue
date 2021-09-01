@@ -1,17 +1,18 @@
 <template>
 <section>
     <TotalCounter></TotalCounter>
-    <Groups></Groups>
+    <Lists></Lists>
+    <ThemeHandler></ThemeHandler>
 </section>
 </template>
 
 <script>
 import TotalCounter from "@/components/TotalCounter/TotalCounter";
-import Groups from "@/components/Groups/Groups";
-
+import ThemeHandler from "@/components/Items/ThemeHandler/ThemeHandler";
+import Lists from "@/components/Lists/Lists";
 export default {
     name: "InfoSection",
-    components: {Groups, TotalCounter}
+    components: {Lists, ThemeHandler, TotalCounter}
 }
 </script>
 

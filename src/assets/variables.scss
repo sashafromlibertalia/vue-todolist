@@ -4,6 +4,9 @@ $selection__color: white;
 $main__color: #37DF84;
 $main__color-hover: #2C9C5F;
 
+$item__main-hover: rgba(84, 222, 147, 0.13);
+$item__selected: rgba(0, 0, 0, 0.03);
+
 $inactive__color: rgba(0, 0, 0, 0.2);
 $inactive__color-hover: rgba(0, 0, 0, 0.4);
 
@@ -13,3 +16,12 @@ $default__font: -apple-system, BlinkMacSystemFont, sans-serif;
 $header__font: 'Montserrat', sans-serif;
 
 $shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+
+@mixin animation {
+    transition: 200ms $animation__bezier;
+}
+
+@mixin animation__item-hover {
+    transition: 150ms $animation__bezier;
+}

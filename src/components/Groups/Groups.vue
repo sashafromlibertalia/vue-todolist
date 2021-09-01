@@ -5,6 +5,7 @@
             <inline-svg class="groups__container_btn" alt="Добавить группу" :src="getImageUrl(`plus.svg`)"></inline-svg>
         </header>
         <ul class="groups__list">
+            <li class="groups__list-item">🌏 Все</li>
         </ul>
     </div>
 </template>

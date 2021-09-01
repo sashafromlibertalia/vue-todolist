@@ -28,7 +28,7 @@
         font-family: $default__font;
         font-weight: bold;
         font-size: 24px;
-        transition: 250ms $animation__bezier;
+        @include animation;
         &:hover {
             background: $main__color-hover;
         }
@@ -38,7 +38,7 @@
         font-family: $default__font;
         color: $inactive__color;
         text-decoration: underline;
-        transition: 250ms $animation__bezier;
+        @include animation;
         &:hover {
             color: $inactive__color-hover;
         }
