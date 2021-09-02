@@ -4,15 +4,24 @@
             <h1 class="groups__container_header">Другое</h1>
         </header>
         <ul class="groups__list">
-            <li class="groups__list-item">🥂 Выполненное</li>
-            <li class="groups__list-item">🗑 Корзина</li>
+            <li class="groups__list-item" v-for="item in items" v-bind:key="item.text">
+                {{ item.text }}
+            </li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Other"
+    name: "Other",
+    data() {
+        return {
+            items: [
+                { text: '🥂 Выполненное'},
+                { text: '🗑 Корзина' }
+            ]
+        }
+    }
 }
 </script>
 

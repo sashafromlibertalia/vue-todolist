@@ -8,7 +8,7 @@
 
 <script>
 import TotalCounter from "@/components/TotalCounter/TotalCounter";
-import ThemeHandler from "@/components/Items/ThemeHandler/ThemeHandler";
+import ThemeHandler from "@/components/ThemeHandler/ThemeHandler";
 import Lists from "@/components/Lists/Lists";
 export default {
     name: "InfoSection",

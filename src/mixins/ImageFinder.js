@@ -7,7 +7,7 @@ export default {
                 return imagePath;
             }
             try {
-                return require(`@/assets/icons/${imagePath}`);
+                return require(`@/assets/${imagePath}`);
             } catch (err) {
                 return "";
             }

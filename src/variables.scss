@@ -19,9 +19,9 @@ $shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
 
 @mixin animation {
-    transition: 200ms $animation__bezier;
+    transition: all 200ms $animation__bezier;
 }
 
 @mixin animation__item-hover {
-    transition: 150ms $animation__bezier;
+    transition: all 150ms $animation__bezier;
 }
