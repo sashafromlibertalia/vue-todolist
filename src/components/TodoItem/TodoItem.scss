@@ -1,0 +1,80 @@
+@import "src/variables";
+
+.todo {
+    &__item {
+        height: 60px;
+        width: 100%;
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 25px;
+        border-radius: 9px;
+        @include animation__item-hover;
+
+        &:hover, &:hover .todo__checkmark {
+            background: $item__selected;
+        }
+    }
+
+    &__title {
+        font-family: $default__font;
+        font-weight: 500;
+        margin: 0 0 0 0.5vw;
+        font-size: 22px;
+    }
+
+    &__checkbox-container {
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+
+        & + .todo__checkmark {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            border: 3px solid $inactive__color;
+            border-radius: 6px;
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 20px;
+            height: 20px;
+            background: white;
+            @include animation;
+
+            &:hover {
+                border-color: $main__color;
+            }
+        }
+
+
+        &:checked + .todo__checkmark {
+            border: 3px solid transparent;
+            background: $main__color;
+        }
+
+        &:checked + .todo__checkmark:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 2px;
+            background: white;
+            width: 3px;
+            height: 3px;
+            box-shadow: 2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+            transform: rotate(45deg);
+        }
+
+    }
+}
