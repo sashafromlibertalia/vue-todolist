@@ -3,7 +3,8 @@
         <section class="info-wrapper">
             <header class="total-counter">
                 <h1 class="total-counter__header">
-                    На данный момент<span class="total-counter__header_total"> {{todoList.length}} </span>задач
+                    На данный момент<span class="total-counter__header_total"> {{ todoList.length }} </span>
+                    {{ todoList.length | correctSpelling }}
                 </h1>
                 <div class="total-counter__reset-btn">Сбросить все задачи</div>
             </header>
@@ -41,7 +42,7 @@
                                    placeholder="Название задачи">
                         </div>
                         <div class="task-template__input">
-                            <input v-model="todoItem.description"  ref="description" class="task-template__description"
+                            <input v-model="todoItem.description" ref="description" class="task-template__description"
                                    type="text" placeholder="Описание">
                         </div>
                     </div>
@@ -100,6 +101,14 @@ export default {
                 }
             ],
             todoList: []
+        }
+    },
+    filters: {
+        // Склонение числительных
+        correctSpelling: (number) => {
+            const titles = ["задача", "задачи", "задач"]
+            const cases = [2, 0, 1, 1, 1, 2];
+            return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
         }
     },
     methods: {
