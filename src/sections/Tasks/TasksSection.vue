@@ -2,7 +2,7 @@
     <section>
         <TaskTemplate></TaskTemplate>
         <ul class="todo">
-            <TodoItem></TodoItem>
+            <TodoItem v-for="todo in todos" :title="todo" :key="todo"></TodoItem>
         </ul>
     </section>
 </template>

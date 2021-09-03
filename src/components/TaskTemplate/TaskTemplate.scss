@@ -2,6 +2,8 @@
 ::placeholder {
     color: $inactive__color;
 }
+
+
 .task-template {
     width: 60%;
     margin: 0;
@@ -66,4 +68,10 @@
         height: 2.8vh;
         @include animation;
     }
+}
+
+.hover path {
+    fill: $inactive__color-hover;
+    color: $inactive__color-hover;
+    fill-opacity: 1;
 }

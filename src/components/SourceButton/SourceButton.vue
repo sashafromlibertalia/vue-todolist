@@ -6,10 +6,10 @@
 
 <script>
 export default {
-    name: "AddTaskSourceCode"
+    name: "SourceButton"
 }
 </script>
 
 <style scoped lang="scss">
-@import "../AddTaskButton/AddTaskButton";
+@import "../CreateTodo/CreateTodo";
 </style>

@@ -8,10 +8,10 @@
 
 <script>
 export default {
-    name: "AddTaskButton"
+    name: "CreateTodo"
 }
 </script>
 
 <style scoped lang="scss">
-@import "AddTaskButton";
+@import "CreateTodo";
 </style>

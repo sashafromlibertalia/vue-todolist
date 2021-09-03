@@ -9,7 +9,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 25px;
+        padding: 20px;
         border-radius: 9px;
         @include animation__item-hover;
 
@@ -22,7 +22,7 @@
         font-family: $default__font;
         font-weight: 500;
         margin: 0 0 0 0.5vw;
-        font-size: 22px;
+        font-size: 1.3rem;
     }
 
     &__checkbox-container {

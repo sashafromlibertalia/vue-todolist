@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import InfoSection from "@/sections/InfoSection/InfoSection";
-import TasksSection from "@/sections/TasksSection/TasksSection";
-import AddTaskSection from "@/sections/AddTaskSection/AddTaskSection";
+import InfoSection from "@/sections/Info/InfoSection";
+import TasksSection from "@/sections/Tasks/TasksSection";
+import AddTaskSection from "@/sections/AddTask/AddTaskSection";
 
 export default {
     name: 'App',

@@ -10,7 +10,7 @@
         </div>
         <div class="task-template__actions">
             <div class="task-template__actions_inner">
-                <inline-svg class="task-template__btn" alt="Подзадачи"
+                <inline-svg class="task-template__btn hover" alt="Подзадачи"
                             :src="getImageUrl(`bulleted-list.svg`)"></inline-svg>
                 <inline-svg class="task-template__btn" alt="Добавить в группу"
                             :src="getImageUrl(`folder.svg`)"></inline-svg>
@@ -21,7 +21,12 @@
 
 <script>
 export default {
-    name: "TaskTemplate"
+    name: "TaskTemplate",
+    data() {
+        return {
+            bulletedList: "url(src/assets/bulleted-list.svg)"
+        }
+    }
 }
 </script>
 
