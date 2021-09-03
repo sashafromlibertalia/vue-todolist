@@ -1,0 +1,40 @@
+@import "variables";
+
+::selection {
+    background: $selection__background;
+    color: $selection__color;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 98%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    height: 100%;
+
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+@import "./components/CreateTodo/CreateTodo";
+@import "./components/TodoTemplate/TodoTemplate";
+@import "./components/ThemeHandler/ThemeHandler";
+@import "./components/TotalCounter/TotalCounter";
+@import "./components/MenuItem/Menu";
+@import "./sections/Todos/TodoList";

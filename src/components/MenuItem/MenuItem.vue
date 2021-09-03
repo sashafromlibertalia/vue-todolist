@@ -1,9 +1,11 @@
 <template>
-    <li class="menu__list-item">🌏 Все</li>
+    <li class="menu__list-item"></li>
 </template>
+
+
 <script>
 export default {
-    name: "MenuItem"
+    name: "MenuItem",
 }
 </script>
 

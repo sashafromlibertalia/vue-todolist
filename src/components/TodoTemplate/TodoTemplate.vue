@@ -33,9 +33,7 @@ export default {
         }
     },
     methods: {
-        transfer: function() {
-            this.$emit("transferredData", this.todo);
-        }
+
     }
 }
 </script>
