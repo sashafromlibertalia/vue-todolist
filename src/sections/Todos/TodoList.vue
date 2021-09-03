@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="vertical-section">
-            <TodoTemplate></TodoTemplate>
+            <BaseTodoTemplate></BaseTodoTemplate>
             <ul class="todo">
-                <TodoItem v-for="(todo, index) in todos" :title="todo.header" :key="index"></TodoItem>
+                <TodoListItem v-for="(todo, index) in todos" :title="todo.header" :key="index"></TodoListItem>
             </ul>
         </div>
         <div class="vertical-section">
@@ -20,12 +20,12 @@
 </template>
 
 <script>
-import TodoTemplate from "@/components/TodoTemplate/TodoTemplate";
-import TodoItem from "@/components/TodoItem/TodoItem";
+import BaseTodoTemplate from "@/components/TodoTemplate/BaseTodoTemplate";
+import TodoListItem from "@/components/TodoListItem";
 
 export default {
     name: "TodoList",
-    components: {TodoItem, TodoTemplate},
+    components: {TodoListItem, BaseTodoTemplate},
     data() {
         return {
             todos: [

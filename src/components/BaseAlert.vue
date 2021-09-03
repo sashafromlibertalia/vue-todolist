@@ -6,10 +6,10 @@
 
 <script>
 export default {
-    name: "Alert"
+    name: "BaseAlert"
 }
 </script>
 
 <style scoped lang="scss">
-@import "Alert";
+@import "Alert/Alert";
 </style>

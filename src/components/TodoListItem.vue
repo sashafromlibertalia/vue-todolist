@@ -1,8 +1,8 @@
 <template>
     <li class="todo__item">
         <div class="todo__checkbox-container">
-            <input class="todo__checkbox" type="checkbox">
-            <span class="todo__checkmark"></span>
+            <input class="todo__checkbox" type="checkbox" :id='`checkbox${id}`'>
+            <label class="todo__checkmark" :for='`checkbox${id}`'></label>
         </div>
         <h3 class="todo__title">{{ title | fixedLength }}</h3>
     </li>
@@ -11,9 +11,10 @@
 <script>
 
 export default {
-    name: "TodoItem",
+    name: "TodoListItem",
     props: {
-        title: String
+        title: String,
+        id: Number
     },
     filters: {
         fixedLength: (value) => {
@@ -25,5 +26,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "TodoItem";
+@import "TodoItem/TodoListItem";
 </style>

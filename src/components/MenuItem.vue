@@ -10,5 +10,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "Menu";
+@import "MenuItem/Menu";
 </style>

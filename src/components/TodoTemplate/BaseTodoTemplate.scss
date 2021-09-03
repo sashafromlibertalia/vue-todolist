@@ -58,14 +58,14 @@
         &_inner {
             display: flex;
             justify-content: space-between;
-            width: 4vw;
+            width: 3.2vw;
         }
     }
 
     &__btn {
-        width: 2.8vh;
+        width: 2.5vh;
         cursor: pointer;
-        height: 2.8vh;
+        height: 2.5vh;
         @include animation;
     }
 }

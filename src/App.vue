@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <ul class="todo">
-                    <TodoItem v-for="(item, index) in todoList" :key="index" :title="item.header"></TodoItem>
+                    <TodoListItem v-for="(item, index) in todoList" :key="index" :title="item.header" :id="index"></TodoListItem>
                 </ul>
             </div>
             <div class="vertical-section">
@@ -75,13 +75,13 @@
 </template>
 
 <script>
-import MenuItem from "@/components/MenuItem/MenuItem";
-import TodoItem from "@/components/TodoItem/TodoItem";
+import MenuItem from "@/components/MenuItem";
+import TodoListItem from "@/components/TodoListItem";
 
 export default {
     name: 'App',
     components: {
-        TodoItem,
+        TodoListItem,
         MenuItem
     },
     data() {
@@ -113,7 +113,12 @@ export default {
     },
     methods: {
         addTodo() {
-            if (this.todoItem.header === "") return
+            const header = document.getElementsByClassName('task-template__header')[0];
+            if (this.todoItem.header === "") {
+                header.classList.add("error")
+                return
+            }
+            header.classList.remove("error")
             this.todoList = [{
                 header: this.todoItem.header,
                 description: this.todoItem.description,

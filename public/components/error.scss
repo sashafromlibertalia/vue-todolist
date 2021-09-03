@@ -1,0 +1,7 @@
+@import "src/variables";
+
+.error {
+    &::placeholder {
+        color: $danger__color;
+    }
+}
