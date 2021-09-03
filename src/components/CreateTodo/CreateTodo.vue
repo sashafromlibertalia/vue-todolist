@@ -7,8 +7,22 @@
 </template>
 
 <script>
+
 export default {
-    name: "CreateTodo"
+    name: "CreateTodo",
+    data() {
+        return {
+            todo: {
+                header: "",
+                description: "",
+                tasks: [],
+                groups: []
+            }
+        }
+    },
+    methods: {
+
+    }
 }
 </script>
 

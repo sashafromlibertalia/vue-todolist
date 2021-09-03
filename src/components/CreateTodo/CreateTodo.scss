@@ -1,13 +1,5 @@
 @import "src/variables";
 
-#right-column {
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-
 .add-button {
     display: flex;
     justify-content: flex-end;

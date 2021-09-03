@@ -1,0 +1,30 @@
+@import "src/variables";
+
+.todo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.vertical-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &:nth-child(1) {
+        width: 70%;
+        align-items: center;
+    }
+    &:nth-child(2) {
+        width: 30%;
+        justify-content: space-between;
+    }
+}
+
+.todo {
+    width: 60%;
+    margin: 10vh 0 0 0;
+    padding: 0;
+    list-style: none;
+}

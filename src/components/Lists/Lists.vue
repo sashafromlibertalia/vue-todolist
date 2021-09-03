@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Groups from "@/components/Groups/Groups";
+import Groups from "@/components/MenuItem/MenuItem";
 import Other from "@/components/Other/Other";
 
 export default {

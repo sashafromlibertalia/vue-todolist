@@ -9,6 +9,7 @@
 </template>
 
 <script>
+
 export default {
     name: "TodoItem",
     props: {
@@ -16,7 +17,7 @@ export default {
     },
     filters: {
         fixedLength: (value) => {
-            return value.length >= 32 ? value.slice(0, 32) + "..." : value
+            return value.length >= 38 ? value.slice(0, 38) + "..." : value
         }
     }
 }

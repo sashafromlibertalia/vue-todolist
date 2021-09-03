@@ -1,8 +1,16 @@
 @import "src/variables";
-.groups {
+
+.menu {
     display: flex;
     flex-direction: column;
     width: fit-content;
+
+    &-wrapper {
+        margin-bottom: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
     &__container {
         display: flex;
@@ -14,6 +22,7 @@
             font-weight: 800;
             font-size: 24px;
         }
+
         &_btn {
             cursor: pointer;
             width: 30px;
@@ -28,6 +37,7 @@
         padding: 0;
         margin: 1vh 0 0 0;
         width: 100%;
+
         &-item {
             width: auto;
             font-family: $default__font;
@@ -38,8 +48,9 @@
             padding: 10px;
             border-radius: 3px;
             margin-bottom: 10px;
+
             &:hover {
-                background: $item__main-hover;
+                background: $item__selected;
             }
         }
     }

@@ -11,11 +11,11 @@ import TotalCounter from "@/components/TotalCounter/TotalCounter";
 import ThemeHandler from "@/components/ThemeHandler/ThemeHandler";
 import Lists from "@/components/Lists/Lists";
 export default {
-    name: "InfoSection",
+    name: "Sidebar",
     components: {Lists, ThemeHandler, TotalCounter}
 }
 </script>
 
 <style scoped lang="scss">
-@import "InfoSection";
+@import "Sidebar";
 </style>

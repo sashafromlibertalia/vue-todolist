@@ -2,10 +2,10 @@
     <div ref="template" class="task-template">
         <div class="task-template__wrapper">
             <div class="task-template__input">
-                <input ref="header" class="task-template__header" type="text" placeholder="Название задачи">
+                <input v-model="todo.header" ref="header" class="task-template__header" type="text" placeholder="Название задачи" @focus="transfer">
             </div>
             <div class="task-template__input">
-                <input ref="description" class="task-template__description" type="text" placeholder="Описание">
+                <input v-model="todo.description" ref="description" class="task-template__description" type="text" placeholder="Описание" @focus="transfer">
             </div>
         </div>
         <div class="task-template__actions">
@@ -21,15 +21,25 @@
 
 <script>
 export default {
-    name: "TaskTemplate",
+    name: "TodoTemplate",
     data() {
         return {
-            bulletedList: "url(src/assets/bulleted-list.svg)"
+            todo: {
+                header: "",
+                description: "",
+                tasks: [],
+                groups: []
+            }
+        }
+    },
+    methods: {
+        transfer: function() {
+            this.$emit("transferredData", this.todo);
         }
     }
 }
 </script>
 
 <style scoped lang="scss">
-@import "TaskTemplate";
+@import "TodoTemplate";
 </style>
